@@ -49,6 +49,12 @@
 						<name>springcloud/test-service</name>
 						<publish>true</publish>
 					</image>
+					<docker>
+						<publishRegistry>
+							<username>${env.DOCKER_HUB_USERNAME}</username>
+							<password>${env.DOCKER_HUB_PASSWORD}</password>
+						</publishRegistry>
+					</docker>
 				</configuration>
 			</plugin>
 		</plugins>
